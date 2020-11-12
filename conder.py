@@ -22,6 +22,9 @@ def decToBinList(decNumber):
   for i in range(8):
     a[i] = int(N[i])
   return(a)
+  
+def dac2dac(decNumber):
+    p = decToBinList(decNumber)
 
 
 def lightNumber(decNumber):
