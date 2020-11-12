@@ -29,6 +29,7 @@ def decToBinList(decNumber):
 	X.append(n)
 	return X
   
+
 def dac2dac(decNumber):
     p = decToBinList(decNumber)
 
