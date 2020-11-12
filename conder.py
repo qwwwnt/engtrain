@@ -15,13 +15,19 @@ for n in range(8):
     GPIO.output(numbers[i], 0)
 
 def decToBinList(decNumber):
-  bnumber = bin(decNumber)
-  ddnumber = bnumber[2:15:1]
-  N = ddnumber.zfill(8)
-  a = [0, 0, 0, 0, 0, 0, 0, 0]
-  for i in range(8):
-    a[i] = int(N[i])
-  return(a)
+	N = 7
+	p = 0
+	x = []
+	while N > 0:
+		p = int(n/2**N)
+		if p == 1:
+			X.append(1)
+			n-=2**N
+		else:
+			X.append(0)
+		N-=1
+	X.append(n)
+	return X
   
 def dac2dac(decNumber):
     p = decToBinList(decNumber)
